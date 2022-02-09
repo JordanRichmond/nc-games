@@ -5,7 +5,7 @@ const gameApi = axios.create({
 });
 
 export const getReviews = () => {
-    console.log('Hello!')
+    console.log(gameApi)
     return gameApi.get('/reviews').then((res) => {
         console.log(res)
         return res.data.reviews;
