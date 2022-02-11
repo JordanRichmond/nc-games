@@ -12,7 +12,7 @@ const Users = () => {
 
     return (
         <main>
-            <h1>USERS!</h1>
+            <h1>Active Users</h1>
             <ul className='UsersList'>
                 {users.map((user) => {
                     return (

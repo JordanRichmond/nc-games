@@ -1,16 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  background-color: white;
 }
 
 .Nav {
-  border: 1px solid grey;
-  padding: 10px;
+  background-color: whitesmoke;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  font-size: 15px;
+  top: 0;
+  left: 0;
+}
+
+.navButtons {
+  color: black;
+}
+
+h1 {
+  font-size: 20px;
+  padding: 25px;
 }
 
 ul {
   list-style-type: none;
   justify-content: space-between;
   padding: 10px;
+}
+
+.reviewOwner {
+  font-size: 15px;
+  padding: 20px;
+}
+
+.reviewBody{
+  font-size: 20px;
+  padding: 20px;
+}
+
+.reviewPhoto {
+  height: 200px;
+}
+
+.reviewVotes {
+  padding: 10px;
+}
+
+.commentCount {
+  padding: 10px;
+}
+
+.image {
+  height: 450px;
+  align-items: center;
 }

@@ -33,7 +33,7 @@ const SingleReview = () => {
         <form onSubmit={addComment}>
         <div>
             <h1 className='reviewTitle'>{review.title}</h1>
-            <img src={review.review_img_url} alt="" />
+            <img className='reviewPhoto' src={review.review_img_url} alt="" />
             <p className='reviewOwner'>Owner: {review.owner}</p>
             <p className='reviewBody'>{review.review_body}</p>
             <p className='reviewVotes'>Votes: {review.votes}</p>

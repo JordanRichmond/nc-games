@@ -26,7 +26,7 @@ const ReviewList = () => {
 
     return (
         <main>
-            <h1>REVIEWS!</h1>
+            <h1>Reviews</h1>
             <form>
                 <label>Filter by Category:</label>
                 <select onChange={onChange}>
