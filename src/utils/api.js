@@ -17,3 +17,9 @@ export const getSingleReview = (review_id) => {
         return res.data.review;
     });
 };
+
+export const postSingleComment = (commentToAdd) => {
+    return gameApi.post(`/reviews/review_id/comments`, commentToAdd).then((res) => {
+        return res.data.comment
+    });
+}
