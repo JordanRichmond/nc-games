@@ -5,9 +5,7 @@ const gameApi = axios.create({
 });
 
 export const getReviews = () => {
-    console.log(gameApi)
     return gameApi.get('/reviews').then((res) => {
-        console.log(res)
         return res.data.reviews;
     });
 };
@@ -18,8 +16,20 @@ export const getSingleReview = (review_id) => {
     });
 };
 
+export const getComments = (review_id) => {
+    return gameApi.get(`/reviews/${review_id}/comments`).then((res => {
+        return res.data.comments;
+    }))
+}
+
 export const postSingleComment = (commentToAdd) => {
     return gameApi.post(`/reviews/review_id/comments`, commentToAdd).then((res) => {
-        return res.data.comment
+        return res.data.comment;
     });
 }
+
+export const getUsers = () => {
+    return gameApi.get('/users').then((res) => {
+        return res.data.users;
+    });
+};
